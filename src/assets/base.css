@@ -33,6 +33,13 @@
   --color-heading: var(--vt-c-text-light-1);
   --color-text: var(--vt-c-text-light-1);
 
+  --color-vtt-tertiary1: #e8e8e8;
+  --color-vtt-tertiary2: #c3c3c3;
+  --color-vtt-background1: #f6f6f6;
+  --color-vtt-background2: #fff;
+  --color-vtt-text-primary: #000;
+  --color-vtt-text-secondary: #4a4b4c;
+
   --section-gap: 160px;
 }
 
@@ -60,8 +67,8 @@
 
 body {
   min-height: 100vh;
-  color: var(--color-text);
-  background: var(--color-background);
+  color: var(--color-vtt-text-primary);
+  background: var(--color-vtt-background1);
   transition:
     color 0.5s,
     background-color 0.5s;

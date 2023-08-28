@@ -7,3 +7,9 @@ import TheWelcome from '../components/TheWelcome.vue'
     <TheWelcome />
   </main>
 </template>
+
+<style>
+main {
+  padding-top: 80px;
+}
+</style>
