@@ -35,6 +35,8 @@
   --color-heading: var(--vt-c-text-light-1);
   --color-text: var(--vt-c-text-light-1);
 
+  --color-vtt-primary: #eb5440;
+  --color-vtt-secondary: #4a4b4c;
   --color-vtt-tertiary1: #e8e8e8;
   --color-vtt-tertiary2: #c3c3c3;
   --color-vtt-background1: #f6f6f6;
