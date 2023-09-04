@@ -33,3 +33,19 @@ a,
     padding: 0 2rem; */
   }
 }
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-evenly {
+  justify-content: space-around;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
