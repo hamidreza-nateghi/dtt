@@ -17,10 +17,17 @@ import HelloWorld from './components/HelloWorld.vue'
     </div>
   </header>
 
-  <RouterView />
+  <div class="container">
+    <RouterView />
+  </div>
 </template>
 
 <style scoped>
+.container {
+  margin: auto;
+  max-width: 1024px;
+}
+
 header {
   line-height: 1.5;
   width: 100vw;
