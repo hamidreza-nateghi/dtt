@@ -1,30 +1,36 @@
-<script setup></script>
+<script setup>
+defineProps({
+  image: String,
+  price: Number,
+  bedrooms: Number,
+  bathrooms: Number,
+  size: Number,
+  street: String,
+  houseNumber: Number,
+  zipCode: String,
+  city: String
+})
+</script>
 
 <template>
   <article>
-    <img
-      class="house-image"
-      src="@/assets/img_placeholder_house@3x.png"
-      alt="A House"
-      width="160"
-      height="160"
-    />
+    <img class="house-image" :src="image" alt="A House" width="160" height="160" />
     <div class="flex flex-col justify-evenly">
-      <h2>Stokvisstraat 132</h2>
-      <p class="info">€ 500,000</p>
-      <p class="info address">1011AA Amsterdam</p>
+      <h2>{{ street }} {{ houseNumber }}</h2>
+      <p class="info">€ {{ price.toLocaleString('nl-NL') }}</p>
+      <p class="info address">{{ zipCode }} {{ city }}</p>
       <div class="flex gap-4">
         <figure>
           <img class="icon" src="@/assets/ic_bed@3x.png" alt="Bed Icon" width="63" height="48" />
-          <figcaption>1</figcaption>
+          <figcaption>{{ bedrooms }}</figcaption>
         </figure>
         <figure>
           <img class="icon" src="@/assets/ic_bath@3x.png" alt="Bath Icon" width="63" height="60" />
-          <figcaption>1</figcaption>
+          <figcaption>{{ bathrooms }}</figcaption>
         </figure>
         <figure>
           <img class="icon" src="@/assets/ic_size@3x.png" alt="Size Icon" width="63" height="63" />
-          <figcaption>120 m2</figcaption>
+          <figcaption>{{ size }} m2</figcaption>
         </figure>
       </div>
     </div>
