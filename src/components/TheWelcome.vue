@@ -6,10 +6,12 @@ import EcosystemIcon from './icons/IconEcosystem.vue'
 import CommunityIcon from './icons/IconCommunity.vue'
 import SupportIcon from './icons/IconSupport.vue'
 import HouseList from './HouseList.vue'
+import SortButtons from './SortButtons.vue'
 </script>
 
 <template>
   <h1>Houses</h1>
+  <SortButtons />
   <HouseList />
   <WelcomeItem>
     <template #icon>
